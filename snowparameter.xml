@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="URL"
+		value="https://dev86082.service-now.com/"></parameter>
+	<parameter name="Name" value="admin"></parameter>
+	<parameter name="Passowrd" value="Pass@123"></parameter>
+	<parameter name="Filter" value="Incident"></parameter>
+	<parameter name="Frame" value="gsft_main"></parameter>
+
+
+	<test thread-count="5" name="Test" verbose="2">
+		<classes>
+			<class name="week5.Day2.Assignmnet.SnowParameterization" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
